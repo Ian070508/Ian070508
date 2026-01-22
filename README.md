@@ -7,7 +7,7 @@ Me chamo Ian Oliveira, tenho 20 anos. Sou desenvolvedor e Tecnólogo em Análise
 Atrvés do meu perfil dp LinkedIn é possível encontrar um pouco sobre minhas áreas de atuação, participação de projetos. Além de conseguir visualizar/acompanhar meus certificados de cursos, certificações e diplomas!
 
 ---
-**`Software Developer with a degree in Systems Analysis and Development`**
+**`Associate of Science (AS) in Systems Analysis and Development`**
 
 My name is Ian Oliveira, and I am 20 years old. I am a Software Developer with a degree in Systems Analysis and Development. My technical expertise includes Programming Logic, Object-Oriented Programming (OOP) with Java, Python, and C#, and Database Structure and Modeling.
 
