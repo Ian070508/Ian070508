@@ -2,7 +2,7 @@
 
 **`Tecnólogo em Análise e Desenvolvimento de Sistemas`**
 
-Me chamo Ian Oliveira, tenho 20 anos. Sou desenvolvedor e Tecnólogo em Análise e Desenvolvimento de Sistemas. Possuo conhecimentos em Lógica de programação; Programação Orientada a Objetos com Java/Python/C#; Estrutura e modelagem de Banco de Dados; Para acompanhar meu perfil profissional basta seguir e se conectar comigo pelo portal do LinkedIn"[Ian Oliveira](www.linkedin.com/in/ian-oliveira-60b087234)", Lá você irá encontrar um pouco sobre minhas áreas de atuação, participação de projetos. Além de conseguir visualizar/acompanhar meus certificados, certificações e diplomas!
+Me chamo Ian Oliveira, tenho 20 anos. Sou desenvolvedor e Tecnólogo em Análise e Desenvolvimento de Sistemas. Possuo conhecimentos em Lógica de programação; Programação Orientada a Objetos com Java/Python/C#; Estrutura e modelagem de Banco de Dados; Para acompanhar meu perfil profissional basta seguir e se conectar comigo pelo portal do LinkedIn"[Ian Oliveira](www.linkedin.com/in/ian-oliveira-60b087234)", Lá você irá encontrar um pouco sobre minhas áreas de atuação, participação de projetos. Além de conseguir visualizar/acompanhar meus certificados de cursos, certificações e diplomas!
 
 
 ---
