@@ -20,8 +20,8 @@ To follow my professional journey, feel free to connect with me on LinkedIn at "
 
 <img
 align="left"
-    alt="Linux"
-    title="Linux"
+    alt="Csharp"
+    title="Csahrp"
     width="30px"
     style="padding-right: 10px;"
 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
