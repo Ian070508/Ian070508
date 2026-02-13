@@ -1,34 +1,31 @@
-# This is a basic workflow to help you get started with Actions
-
 name: GitHub-Profile-Summary-Cards
 
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-  schedule: # Roda a cada 24 horas
+  schedule:
     - cron: "0 0 * * *"
-  workflow_dispatch:  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
+permissions:
+  contents: write  # ISSO É ESSENCIAL: Dá permissão para a Action salvar as imagens
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
-   runs-on: ubuntu-latest
-   name: generate-github-profile-summary-cards
-   steps:
+    runs-on: ubuntu-latest
+    name: generate-github-profile-summary-cards
+    steps:
       - uses: actions/checkout@v3
-      - uses: vn7n24fzkq/github-profile-summary-cards@release
+      
+      - name: Generate Summary Cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           USERNAME: ${{ github.repository_owner }}
-      - name: Run a multi-line script
+
+      - name: Commit and Push
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Update profile summary cards" || echo "No changes to commit"
+          git push
