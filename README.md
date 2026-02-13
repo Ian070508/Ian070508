@@ -127,3 +127,4 @@ src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apa
   />
 
 </p>
+<img src="profile-summary-card-output/gruvbox/0-stats.svg" height="300" />
