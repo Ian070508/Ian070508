@@ -10,14 +10,13 @@ permissions:
 
 jobs:
   build:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Generate profile summary cards
-        uses: vn7n24fzkq/github-profile-summary-cards@release
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
         with:
           USERNAME: Ian070508
         env:
