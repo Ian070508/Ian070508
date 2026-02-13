@@ -1,8 +1,7 @@
-
-
-name: GitHub-Profile-Summary-Cards
 permissions:
   contents: write
+name: GitHub-Profile-Summary-Cards
+
 on:
   schedule:
     - cron: "0 * * * *"
