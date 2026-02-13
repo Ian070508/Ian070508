@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write  # ISSO É ESSENCIAL: Dá permissão para a Action salvar as imagens
+  contents: write
 
 jobs:
   build:
@@ -15,17 +15,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - name: Generate Summary Cards
+      - name: Generate and Push Cards
         uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          USERNAME: ${{ github.repository_owner }}
-
-      - name: Commit and Push
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "Update profile summary cards" || echo "No changes to commit"
-          git push
+          USERNAME: "Ian070508"
