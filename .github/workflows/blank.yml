@@ -3,21 +3,29 @@ name: GitHub-Profile-Summary-Cards
 on:
   schedule:
     - cron: "0 0 * * *"
-  workflow_dispatch:
+  workflow_dispatch: # Permite rodar manualmente para testar
 
 permissions:
-  contents: write
+  contents: write # Permissão crucial para o GitHub deixar salvar os arquivos
 
 jobs:
   build:
     runs-on: ubuntu-latest
     name: generate-github-profile-summary-cards
     steps:
-      - uses: actions/checkout@v3
-      
-      - name: Generate and Push Cards
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Generate Summary Cards
         uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           USERNAME: "Ian070508"
+          AUTO_PUSH: false # DESATIVADO: Para evitar o erro de permissão interno da Action
+
+      - name: Commit and Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update GitHub Profile Summary Cards"
+          file_pattern: 'profile-summary-card-output/*' # Garante que apenas as pastas de stats sejam salvas
