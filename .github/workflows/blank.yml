@@ -1,16 +1,23 @@
-permissions:
-  contents: write
 name: GitHub-Profile-Summary-Cards
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 0 * * *"
   workflow_dispatch:
+
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: vn7n24fzkq/github-profile-summary-cards@release
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate profile summary cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
         with:
           USERNAME: Ian070508
         env:
